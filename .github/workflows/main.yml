@@ -31,5 +31,5 @@ name: Test Action
         run: nom install -g surge
         
       -name: Deploy website on surge
-        run surge./arrogant-morning.surge.sh/ --token $${{ secrets.TEST_SURGE_TOKEN}}
+        run surge./ https://arrogant-morning.surge.sh/ --token ${{secrets.TEST_SURGE_TOKEN}}
       
