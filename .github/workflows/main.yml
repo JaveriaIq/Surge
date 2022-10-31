@@ -31,5 +31,5 @@ jobs:
     -run: npm install -g surge
         
     -name: Deploy website on surge
-    -run surge./ https://arrogant-morning.surge.sh/ --token ${{secrets.TEST_SURGE_TOKEN}}
+    -run surge ./ arrogant-morning.surge.sh --token ${{ secrets.TEST_SURGE_TOKEN }}
       
