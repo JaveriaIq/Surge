@@ -1,4 +1,4 @@
-name:Test Action
+name: Test Action
   # Controls when the action will run.
   on: 
     # Triggers the the workflow on oush or pull request event bbut only for the main branch.
