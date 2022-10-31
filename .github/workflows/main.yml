@@ -2,7 +2,8 @@ name:Test Action
   # Controls when the action will run.
   on: 
     # Triggers the the workflow on oush or pull request event bbut only for the main branch.
-    
+    push:
+      branches: [ main ]
     
     jobs:
     #this workflow contains a single job called build
@@ -30,5 +31,5 @@ name:Test Action
         run: nom install -g surge
         
       -name: Deploy website on surge
-        run surge./https://arrogant-morning.surge.sh/ --token $${{ secrets.TEST_SURGE_TOKEN}}
+        run surge./arrogant-morning.surge.sh/ --token $${{ secrets.TEST_SURGE_TOKEN}}
       
