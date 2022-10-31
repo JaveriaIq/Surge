@@ -10,7 +10,7 @@ on:
     
     build:
       # the tyoe runner that the job will run on
-        runs-on: ubuntu-latest
+     runs-on: ubuntu-latest
     #step represents a sequence of task that will be executed as part of the job
     
       Steps:
